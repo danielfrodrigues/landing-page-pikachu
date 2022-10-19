@@ -1,14 +1,17 @@
+
+/*Global Settings*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+/*Auxiliaries*/
 :root {
     --primary-color: #f5cf06;
     --secondary-color: #8E4106;
 }
 
+/*Settings*/
 body {
     height: 100vh;
     background-color: var(--primary-color);
@@ -16,8 +19,17 @@ body {
     flex-direction: column;
 }
 
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 90vw;
+    margin: auto;
+}
+
 header{
     background-color: aqua;
+    margin-top: 70px;
 }
 
 main {
@@ -27,4 +39,6 @@ main {
 
 footer {
     background-color: plum;
+    margin-bottom: 24px;
 }
+
